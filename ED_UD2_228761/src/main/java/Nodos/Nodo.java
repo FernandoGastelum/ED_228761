@@ -2,19 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.ed_ud2_228761.Nodos;
+package Nodos;
 
 /**
  *
  * @author gaspa
  */
-public class NodoD {
+public class Nodo {
     private int valor;
-    private NodoD sig;
-    private NodoD ant;
+    private Nodo siguiente;
 
-    public NodoD(int valor) {
+    public Nodo() {
+    }
+
+    public Nodo(int valor, Nodo siguiente) {
         this.valor = valor;
+        this.siguiente=siguiente;
     }
 
     public int getValor() {
@@ -25,20 +28,18 @@ public class NodoD {
         this.valor = valor;
     }
 
-    public NodoD getSig() {
-        return sig;
+    public Nodo getSiguiente() {
+        return siguiente;
     }
 
-    public void setSig(NodoD sig) {
-        this.sig = sig;
+    public void setSiguiente(Nodo siguiente) {
+        this.siguiente = siguiente;
     }
 
-    public NodoD getAnt() {
-        return ant;
+    @Override
+    public String toString() {
+        return "Nodo{" + "valor=" + valor + ", siguiente=" + siguiente + '}';
     }
-
-    public void setAnt(NodoD ant) {
-        this.ant = ant;
-    }
+    
     
 }

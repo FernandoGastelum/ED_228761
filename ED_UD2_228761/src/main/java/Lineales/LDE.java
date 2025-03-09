@@ -4,7 +4,7 @@
  */
 package Lineales;
 
-import com.mycompany.ed_ud2_228761.Nodos.NodoD;
+import Nodos.NodoD;
 
 /**
  *
