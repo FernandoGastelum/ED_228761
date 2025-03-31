@@ -6,6 +6,7 @@ package com.mycompany.ed_ud2_228761;
 
 import Lineales.LDE;
 import Lineales.LES;
+import Lineales.LESC;
 
 /**
  *
@@ -78,10 +79,40 @@ public class ED_UD2_228761 {
         lista.clear();
         System.out.println("Lista vacía después de clear(): " + lista.isEmpty());
     }
+    public void LESC(){
+        LESC lista = new LESC();
+        
+        System.out.println("Lista vacía: " + lista.isEmpty());
+        
+        // Agregar elementos al inicio y final
+        lista.addFirst(10);
+        lista.addFirst(20);
+        lista.addLast(30);
+        lista.addLast(40);
+        
+        System.out.println("Lista después de agregar elementos:");
+        lista.print();
+        
+        // Tamaño de la lista
+        System.out.println("Tamaño de la lista: " + lista.size());
+        
+        // Eliminar el primer elemento
+        lista.removeFirst();
+        System.out.println("Lista después de removeFirst():");
+        lista.print();
+        
+        // Eliminar el último elemento
+        lista.removeLast();
+        System.out.println("Lista después de removeLast():");
+        lista.print();
+        
+        // Verificar si la lista está vacía
+        System.out.println("Lista vacía: " + lista.isEmpty());
+    }
 
     public static void main(String[] args) {
         ED_UD2_228761 test = new ED_UD2_228761();
-        test.LDE();
+        test.LESC();
     }
     
 }

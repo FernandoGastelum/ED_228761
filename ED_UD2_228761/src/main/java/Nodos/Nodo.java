@@ -30,7 +30,10 @@ public class Nodo {
         this.valor = valor;
         this.siguiente = siguiente;
     }
-
+    public Nodo(int valor) {
+        this.valor = valor;
+        
+    }
     /**
      * Obtiene el valor almacenado en el nodo.
      *
