@@ -5,6 +5,7 @@
 package com.mycompany.ed_ud2_228761;
 
 import Lineales.LDE;
+import Lineales.LDEC;
 import Lineales.LES;
 import Lineales.LESC;
 
@@ -109,10 +110,45 @@ public class ED_UD2_228761 {
         // Verificar si la lista está vacía
         System.out.println("Lista vacía: " + lista.isEmpty());
     }
+    public void LDEC(){
+        LDEC lista = new LDEC();
+
+        System.out.println("¿Lista vacía?: " + lista.isEmpty());
+        System.out.println("Tamaño: " + lista.size());
+
+        System.out.println("\nAgregando elementos al inicio...");
+        lista.addFirst(10);
+        lista.addFirst(20);
+        lista.addFirst(30);
+        lista.print();
+
+        System.out.println("\nAgregando elementos al final...");
+        lista.addLast(40);
+        lista.addLast(50);
+        lista.print();
+
+        System.out.println("\nEliminando el primer elemento...");
+        lista.removeFirst();
+        lista.print();
+
+        System.out.println("\nEliminando el último elemento...");
+        lista.removeLast();
+        lista.print();
+
+        System.out.println("\n¿La lista contiene 20?: " + lista.contains(20));
+        System.out.println("¿La lista contiene 100?: " + lista.contains(100));
+
+        System.out.println("\nElemento en la posición 1: " + lista.getElement(1));
+
+        System.out.println("\nLimpiando la lista...");
+        lista.clear();
+        lista.print();
+    
+    }
 
     public static void main(String[] args) {
         ED_UD2_228761 test = new ED_UD2_228761();
-        test.LESC();
+        test.LDEC();
     }
     
 }
